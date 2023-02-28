@@ -30,6 +30,7 @@ public class RestauranteController {
 	 * SErvicio con los metodos que realizan la logica de negocio de empleados
 	 *
 	 */
+	public List<Restaurante> restaurantesFiltrados;
 	
 	private RestauranteService restauranteService = new RestauranteService();
 	
@@ -62,5 +63,19 @@ public class RestauranteController {
 	 */
 	public void setRestaurantes(List<Restaurante> restaurantes) {
 		this.restaurantes = restaurantes;
+	}
+
+	/**
+	 * @return the restaurantesFiltrados
+	 */
+	public List<Restaurante> getRestaurantesFiltrados() {
+		return restaurantesFiltrados;
+	}
+
+	/**
+	 * @param restaurantesFiltrados the restaurantesFiltrados to set
+	 */
+	public void setRestaurantesFiltrados(List<Restaurante> restaurantesFiltrados) {
+		this.restaurantesFiltrados = restaurantesFiltrados;
 	}
 }
